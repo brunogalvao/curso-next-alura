@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react'
-import Link from '../src/components/Link'
-import Head from 'next/head'
+
+import FAQScreen from '../src/screen/FAQScreen';
+
+export default FAQScreen;
 
 /*
-
     SSG -> Static Site Generation
     SSR -> Server Side Rendering
     ISG -> Incremental Static Generation (mistura dos dois primeiros).
@@ -45,35 +45,35 @@ export async function getStaticProps() {
 
 }
 
-export default function FaqPage({ faq, cliR }) {
+// export default function FaqPage({ faq, cliR }) {
     
-    console.log(cliR)
+//     console.log(cliR)
 
-    // function selecionar() {
-    //     alert(this.nome);
-    // }
+//     // function selecionar() {
+//     //     alert(this.nome);
+//     // }
 
-    return(
-        <div>
-            <Head>
-                <title>FAQ - Alura Case Campanha</title>
-            </Head>
-            <h1>Alura Case - Faq Page</h1>
+//     return(
+//         <div>
+//             <Head>
+//                 <title>FAQ - Alura Case Campanha</title>
+//             </Head>
+//             <h1>Alura Case - Faq Page</h1>
 
-            <Link href="/">
-                Home
-            </Link>
-            <ul>
-                {faq.map(({ answer, question }) => (
-                    <li key={question}> 
-                        <article>
-                            <h2>{question}</h2>
-                            <p>{answer}</p>
-                        </article>
-                    </li>
-                ))}
-            </ul>
+//             <Link href="/">
+//                 Home
+//             </Link>
+//             <ul>
+//                 {faq.map(({ answer, question }) => (
+//                     <li key={question}> 
+//                         <article>
+//                             <h2>{question}</h2>
+//                             <p>{answer}</p>
+//                         </article>
+//                     </li>
+//                 ))}
+//             </ul>
 
-        </div>
-    )
-}
+//         </div>
+//     )
+// }
