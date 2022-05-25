@@ -1,5 +1,3 @@
-// import Link from 'next/link';
-
 import { useEffect, useState } from 'react'
 import Link from '../src/components/Link'
 import Head from 'next/head'
